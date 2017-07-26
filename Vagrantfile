@@ -5,7 +5,7 @@ Vagrant.configure("2") do |config|
   # Instalar os pacotes do linux(provisionamento)
   #
   # config.vm.provision :shell, path: "https://github.com/orendon/vagrant-rails/raw/master/script/vagrant_bootstrap.sh", privileged: false
-  config.vm.provision :shell, path: "script/vagrant_bootstrap.sh", privileged: false
+  config.vm.provision :shell, path: "scripts/vagrant_bootstrap.sh", privileged: false
   
   # Compartilhar diretórios(pastas) adicionais para a máquina hospedeira
   #
