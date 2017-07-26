@@ -44,7 +44,7 @@ sudo apt install -y ruby-bundler
 gem install bundler
 bundle install
 cd config
-for file in *.yml; do cp "$file" "${file/.yml}"; done
+for file in _*.yml; do cp "$file" "${file/_/}"; done
 
 # Criar os bancos de desenvolvimento e teste
 rake db:create:all
